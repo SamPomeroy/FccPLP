@@ -1,0 +1,156 @@
+body {
+  background: url(images.jpg);
+  text-align: center;
+  }
+
+body,
+input,
+button {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+.nav-link {
+  font-family: sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  z-index: 1;
+}
+
+#header-img {
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0px;
+}
+
+#nav-bar a {
+  float: right;
+  display: block;
+  color: black;
+  transition-duration: 0.4s;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+#nav-bar a:hover {
+  background-color: rgb(124, 117, 117);
+  color: black;
+}
+
+#form {
+  margin-top: 55px;
+}
+
+#email {
+  height: 2em;
+  width: 15em;
+  border-radius: 1em;
+  padding-left: 0.6em;
+}
+
+#submit {
+  height: 3em;
+  width: 7em;
+  border-radius: 1em;
+  cursor: pointer;
+}
+#submit:hover {
+    background-color: rgb(156, 156, 154);
+}
+ 
+#features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#features {
+  background-color: whitesmoke;
+  width: 75%;
+  border-radius: 4em;
+}
+
+#features,
+#view,
+#offers {
+  margin-top: 0px;
+  padding: 55px;
+}
+
+#video-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+#video {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#offers-container {
+  display: flex;
+  justify-content: center;
+}
+
+#offers {
+  background-color: rgb(167, 162, 162);
+  width: 85%;
+  border-radius: 4em;
+}
+
+.offer {
+  background-color: whitesmoke;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+
+footer {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 0.3em;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(17, 16, 16);
+  margin-left: 0.5em;
+}
+
+footer p {
+  color: #606060;
+}
+
+@media (max-width: 600px) {
+  #nav-bar {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  #video-container {
+    padding-top: initial;
+  }
+  #video {
+    position: static;
+    height: 315px;
+    width: 560px;
+  }
+}
